@@ -1,13 +1,15 @@
 <resources>
     <string name="app_name">Tip Calculator</string>
-    <string name="enter_numbers">ENTER NUMBERS!</string>
+    <string name="enter_numbers">ENTER YOUR NUMBERS!</string>
     <string name="tip_amount">Amount to tip:</string>
+    <string name="states_button">VIEW STATE PERCENTAGES</string>
     <string name="launch_button">GO TO CALCULATOR</string>
     <string name="enter_state">Enter state (capitalize first letter)</string>
-    <string name="enter_total">Total Amount (ex. 24.80)</string>
-    <string name="enter_people">Enter number of people</string>
-    <string name="enter_percent">Percent to tip? (ex. 20)</string>
+    <string name="enter_total">Enter the total amount (ex. 24.80)</string>
+    <string name="enter_people">Enter the number of people</string>
+    <string name="enter_percent">Enter the percent to tip (ex. 20)</string>
     <string name="calc_button">CALCULATE</string>
     <string name="or_button">OR</string>
-    <string name="launch_text">Welcome to the tip calculator!\n\n Using this app is as easy as entering the total amount (without the $ sign), the number of people splitting the bill, the percent to tip if you have a percentage in mind (without the % sign), OR you can actually enter in the state you\'re in to see what the standard tip percentage is!\n\n Then just hit calculate and the result (amount to tip) will be at the bottom!</string>
+    <string name="calc_message">Once all your numbers are entered in, hit calculate to see how much each person should tip!</string>
+    <string name="launch_text">Welcome to the tip calculator!\n\nUsing this app is as easy as entering the total amount (without the $ sign), the number of people splitting the bill, the percent to tip if you have a percentage in mind (without the % sign), OR you can view the list of average tip percentages by state here at the main menu for wherever you are to see what\'s usual for that state!\n\n Then just hit calculate and the result (amount to tip) will be at the bottom!</string>
 </resources>

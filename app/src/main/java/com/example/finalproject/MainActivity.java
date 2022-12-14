@@ -6,12 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import java.util.Objects;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
     }
 
     // total amount: editTextNumberDecimal
@@ -30,13 +33,11 @@ public class MainActivity extends AppCompatActivity {
         float n2 = Float.parseFloat(people.getText().toString());
         float n3 = Float.parseFloat(percent.getText().toString());
 
-        float percentDecimal = n3/100;
-        float temp = n1*percentDecimal;
+        float percentDecimal = (n3/100);
+        float individualTip = (n1 * percentDecimal) / n2;
+        float result = Math.round(individualTip * 100) / 100.0F;
 
-        float result = (n1 + temp) / n2;
-        float resultFr = (result * 100) / 100.0F;
-
-        total.setText("Try tipping $" + resultFr + "!");
+        total.setText("Tip $" + result + " for each person!");
 
         // amount + (amount*percentToTip) / people
     }
